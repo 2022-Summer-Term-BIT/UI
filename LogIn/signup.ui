@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Signup</class>
+ <widget class="QWidget" name="Signup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: rgb(255,255,255);
+}
+
+QPushButton#xButton
+{
+	background: transparent;
+	border-image: url(:/Image/X.png);
+}
+
+QPushButton#minButton
+{
+	background: transparent;
+	border-image: url(:/Image/min.png);
+}
+
+QPushButton#settingButton
+{
+	background: transparent;
+	border-image: url(:/Image/setting.png);
+}
+
+QPushButton#xButton:hover
+{
+	background-color: rgba(255, 78, 73, 128);
+	border-image: url(:/Image/X 2.png);
+}
+
+QPushButton#minButton:hover
+{
+	background-color: rgba(128, 128, 128, 128);
+	border-image: url(:/Image/min 2.png);
+}
+
+QPushButton#settingButton:hover
+{
+	background-color: rgba(128, 128, 128, 128);
+	border-image: url(:/Image/setting 2.png);
+}
+
+QPushButton#backButton
+{
+	background: transparent;
+	border-image: url(:/Image/arrowleft 2.png);
+}
+
+QPushButton#backButton:hover
+{
+	background-color: rgba(128, 128, 128, 128);
+	border-image: url(:/Image/arrowleft.png);
+}
+
+QPushButton#confirmButton
+{
+	background: transparent;
+	border-image: url(:/Image/check.png);
+}
+
+QLineEdit
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgb(200, 200, 200);
+	font: bold 16px;
+}
+
+QLineEdit:hover
+{
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+QLineEdit:focus
+{
+	border-bottom: 1px solid rgb(150, 249, 255);
+}
+
+QLabel#label
+{
+	background: transparent;
+	border-image: url(:/Image/user.png);
+}
+
+QLabel#label_2
+{
+	background: transparent;
+	border-image: url(:/Image/gender.png);
+}
+
+QLabel#label_3
+{
+	background: transparent;
+	border-image: url(:/Image/locking.png);
+}
+
+QLabel#label_4
+{
+	background: transparent;
+	border-image: url(:/Image/phone.png);
+}
+
+QLabel#label_5
+{
+	background: transparent;
+	border-image: url(:/Image/work.png);
+}
+
+QLabel#label_6
+{
+	background: transparent;
+	border-image: url(:/Image/email.png);
+}
+
+QLabel#label_7
+{
+	background: transparent;
+	border-image: url(:/Image/location.png);
+}
+
+QLabel#label_8
+{
+	background: transparent;
+	border-image: url(:/Image/edit.png);
+}
+
+QRadioButton#radioButton
+{
+	background: transparent;
+	color: white;
+}
+
+QRadioButton#radioButton_2
+{
+	background: transparent;
+	color: white;
+}
+
+QRadioButton#radioButton_3
+{
+	background: transparent;
+	color: white;
+}
+
+QComboBox#workBox
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgb(200, 200, 200);
+	font: bold 16px;
+	color: white;
+}
+
+QComboBox#workBox:hover
+{
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+QComboBox#workBox:focus
+{
+	border-bottom: 1px solid rgb(150, 249, 255);
+}
+
+QComboBox#workBox::drop-down
+{
+	min-width: 25px;
+	border-image: url(:/Image/down 2.png);
+}
+
+QComboBox#workBox::drop-down:hover
+{
+	border-image: url(:/Image/down.png);
+}
+
+QComboBox#workBox::drop-down:checked
+{
+	border-image: url(:/Image/up.png);
+}
+
+QComboBox QAbstractItemView {
+	outline: 0px solid rgb(211, 246, 255);   /* 选定项的虚框 */
+	border: 1px solid rgb(150, 249, 255);   /* 整个下拉窗体的边框 */
+	border-top: 0px;
+	background-color: none;   /* 整个下拉窗体的背景色 */
+	selection-background-color: rgb(200, 200, 200);   /* 整个下拉窗体被选中项的背景色 */
+}</string>
+  </property>
+  <widget class="QPushButton" name="xButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>0</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minButton">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>0</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labTop">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>400</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="src.qrc">:/Image/1.gif</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="settingButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>0</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>0</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>40</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>账号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>200</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>邮件</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>80</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>电话</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>80</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>密码确认</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>240</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_6">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_7">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>280</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>地址</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>280</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_8">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>320</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>简介</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>320</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Male</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>120</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Female</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>120</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Common</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="workBox">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>191</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>学生</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教师</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>公务员</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>商务</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>其他</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>300</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>labTop</zorder>
+  <zorder>settingButton</zorder>
+  <zorder>minButton</zorder>
+  <zorder>xButton</zorder>
+  <zorder>backButton</zorder>
+  <zorder>label</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>label_2</zorder>
+  <zorder>lineEdit_3</zorder>
+  <zorder>label_3</zorder>
+  <zorder>lineEdit_4</zorder>
+  <zorder>label_4</zorder>
+  <zorder>lineEdit_5</zorder>
+  <zorder>label_5</zorder>
+  <zorder>lineEdit_6</zorder>
+  <zorder>label_6</zorder>
+  <zorder>lineEdit_7</zorder>
+  <zorder>label_7</zorder>
+  <zorder>lineEdit_8</zorder>
+  <zorder>label_8</zorder>
+  <zorder>radioButton</zorder>
+  <zorder>radioButton_2</zorder>
+  <zorder>radioButton_3</zorder>
+  <zorder>workBox</zorder>
+  <zorder>confirmButton</zorder>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

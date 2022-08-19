@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/1.gif</file>
+        <file>Image/account.png</file>
+        <file>Image/lock.png</file>
+        <file>Image/min.png</file>
+        <file>Image/settings.png</file>
+        <file>Image/X.png</file>
+        <file>Image/setting.png</file>
+        <file>Image/min 2.png</file>
+        <file>Image/setting 2.png</file>
+        <file>Image/X 2.png</file>
+        <file>Image/keyboard 2.png</file>
+        <file>Image/keyboard.png</file>
+        <file>Image/QRcode 2.png</file>
+        <file>Image/QRcode.png</file>
+        <file>Image/down 2.png</file>
+        <file>Image/down.png</file>
+        <file>Image/up 2.png</file>
+        <file>Image/up.png</file>
+        <file>Image/A.png</file>
+        <file>Image/arrow.png</file>
+        <file>Image/check.png</file>
+        <file>Image/edit.png</file>
+        <file>Image/location.png</file>
+        <file>Image/menu.png</file>
+        <file>Image/phone.png</file>
+        <file>Image/thumbs-up.png</file>
+        <file>Image/wifi.png</file>
+        <file>Image/arrowleft 2.png</file>
+        <file>Image/arrowleft.png</file>
+        <file>Image/email.png</file>
+        <file>Image/heart.png</file>
+        <file>Image/launch-link.png</file>
+        <file>Image/locking.png</file>
+        <file>Image/user-add.png</file>
+        <file>Image/user.png</file>
+        <file>Image/work.png</file>
+        <file>Image/gender.png</file>
+    </qresource>
+</RCC>

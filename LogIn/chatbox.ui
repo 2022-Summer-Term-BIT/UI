@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Chatbox</class>
+ <widget class="QWidget" name="Chatbox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QWidget#Chatbox
+{
+	background-color: rgb(255, 255, 255);
+}
+
+QWidget#settingWidget
+{
+	background-color: rgba(192, 192, 192, 204);
+}
+
+QWidget#chatWidget
+{
+	border-left: 1px solid rgb(128, 128, 128);
+}
+
+QTextEdit#msgText
+{
+	border: none;
+	background-color: rgba(250, 250, 250, 191);
+	font: 16pt &quot;Songti SC&quot;;
+	color: black;
+}
+
+QPushButton#headPix
+{
+	background: transparent;
+	border-radius: 50px;
+	border-width: 2px;
+	border-style: solid;
+	border-image: url(:/Image/A.png);
+}
+
+QPushButton#currentChat
+{
+	background: transparent;
+	border-image: url(:/Image/chat 2.png);
+}
+
+QPushButton#currentChat:hover
+{
+	border-image: url(:/Image/chat.png);
+}
+
+QPushButton#currentChat:checked
+{
+	border-image: url(:/Image/chatting.png);
+}
+
+QPushButton#contacts
+{
+	background: transparent;
+	border-image: url(:/Image/user 2.png);
+}
+
+QPushButton#contacts:hover
+{
+	border-image: url(:/Image/user.png);
+}
+
+QPushButton#contacts:checked
+{
+	border-image: url(:/Image/user.png);
+}
+
+QPushButton#fileTrans
+{
+	background: transparent;
+	border-image: url(:/Image/file 2.png);
+}
+
+QPushButton#fileTrans:hover
+{
+	border-image: url(:/Image/file.png);
+}
+
+QPushButton#fileTrans:checked
+{
+	border-image: url(:/Image/file.png);
+}
+
+QPushButton#postPlaza
+{
+	background: transparent;
+	border-image: url(:/Image/plaza.png);
+}
+
+QPushButton#postPlaza:hover
+{
+	border-image: url(:/Image/plaza 3.png);
+}
+
+QPushButton#postPlaza:checked
+{
+	border-image: url(:/Image/plaza 2.png);
+}
+
+QPushButton#settings
+{
+	background: transparent;
+	border-image: url(:/Image/menu.png);
+}
+
+QPushButton#settings:hover
+{
+	border-image: url(:/Image/menu 2.png);
+}
+
+QPushButton#settings:checked
+{
+	border-image: url(:/Image/menu 2.png);
+}
+
+QWidget#contactPage
+{
+	background-color: rgba(232, 232, 232, 191);
+}
+
+QWidget#chatPage
+{
+	background-color: rgba(232, 232, 232, 191);
+}
+
+QListWidget#contactList
+{
+	background-color: rgba(232, 232, 232, 191);
+	border: none;
+	font: 700 14pt &quot;Heiti SC&quot;;
+	color: black;
+}
+
+QListWidget#contactList::item:hover
+{
+    /*border:0px;*/
+	background-color: lightgrey;
+	padding:4px;
+	margin:0px;
+}
+
+QListWidget#contactList::item:selected
+{
+	/*border:0px;*/
+	background-color: rgb(152, 152, 152);
+	padding:0px;
+	margin:0px;
+}
+
+QListWidget#chatList
+{
+	background-color: rgba(232, 232, 232, 191);
+	border: none;
+	font: 700 14pt &quot;Heiti SC&quot;;
+	color: black;
+}
+
+QListWidget#chatList::item:hover
+{
+	/*border:0px;*/
+	background-color: lightgrey;
+	padding:4px;
+	margin:0px;
+}
+
+QListWidget#chatList::item:selected
+{
+	 /*border:0px;*/
+	background-color: rgb(152, 152, 152);
+	padding:4px;
+	margin:0px;
+}
+
+QPushButton#searchButton
+{
+	border: none;
+	border-radius: 3px;
+	background-color: rgba(220, 220, 220, 191);
+	font: 700 13pt &quot;Heiti SC&quot;;
+	color: rgb(173, 173, 173);
+}
+
+QPushButton#searchButton:hover
+{
+	background-color: rgba(200, 200, 200, 191);
+}
+
+QLineEdit#searchBar
+{
+	background-color: rgba(220, 220, 220, 191);
+	border-radius: 3px;
+	border-width: 1px;
+}
+
+QLineEdit#searchBar:hover
+{
+	background-color: rgba(200, 200, 200, 191);
+}
+
+QLineEdit#searchBar:focus
+{
+	background-color: rgba(200, 200, 200, 191);
+}
+
+QPushButton#searchButton_2
+{
+	border: none;
+	border-radius: 3px;
+	background-color: rgba(220, 220, 220, 191);
+	font: 700 13pt &quot;Heiti SC&quot;;
+	color: rgb(173, 173, 173);
+}
+
+QPushButton#searchButton_2:hover
+{
+	background-color: rgba(200, 200, 200, 191);
+}
+
+QLineEdit#searchBar_2
+{
+	background-color: rgba(220, 220, 220, 191);
+	border-radius: 3px;
+	border-width: 1px;
+}
+
+QLineEdit#searchBar_2:hover
+{
+	background-color: rgba(200, 200, 200, 191);
+}
+
+QLineEdit#searchBar_2:focus
+{
+	background-color: rgba(200, 200, 200, 191);
+}
+
+QPushButton#sendButton
+{
+	background-color: rgba(43, 197, 255, 191);
+	color: rgb(139, 139, 139);
+	border-radius: 7px
+}
+
+QPushButton#sendButton:hover
+{
+	background-color: rgba(43, 197, 255, 240);
+	border-radius: 7px
+}
+
+QWidget#stackedWidget_2
+{
+	background-color: rgba(240, 240, 240, 191);
+}
+
+QWidget#labTop
+{
+	background-color: rgba(240, 240, 240, 191);
+}
+
+QPushButton#xButton
+{
+	background: transparent;
+	border-image: url(:/Image/X.png);
+}
+
+QPushButton#minButton
+{
+	background: transparent;
+	border-image: url(:/Image/min.png);
+}
+
+QPushButton#xButton:hover
+{
+	background-color: rgba(255, 78, 73, 128);
+	border-image: url(:/Image/X 2.png);
+}
+
+QPushButton#minButton:hover
+{
+	background-color: rgba(128, 128, 128, 128);
+	border-image: url(:/Image/min 2.png);
+}
+
+QLabel#chatWith
+{
+	font: 700 16pt &quot;Heiti SC&quot;;
+	color: black;
+}
+
+QWidget#patch
+{
+	border: none;
+	background-color: rgba(250, 250, 250, 191);
+}</string>
+  </property>
+  <widget class="QWidget" name="settingWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>61</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="headPix">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="currentChat">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>90</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="contacts">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>140</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fileTrans">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>190</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="postPlaza">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>240</y>
+      <width>34</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settings">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>560</y>
+      <width>30</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="chatWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>-1</y>
+     <width>531</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <widget class="QTextEdit" name="msgText">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>501</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendButton">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>574</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>531</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="cat"/>
+    <widget class="QWidget" name="dog"/>
+   </widget>
+   <widget class="QWidget" name="labTop" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="xButton">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>0</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minButton">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>0</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chatWith">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="patch" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>31</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>570</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>msgText</zorder>
+   <zorder>patch</zorder>
+   <zorder>stackedWidget_2</zorder>
+   <zorder>widget</zorder>
+   <zorder>sendButton</zorder>
+   <zorder>labTop</zorder>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>-20</y>
+     <width>211</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="chatPage">
+    <widget class="QListWidget" name="chatList">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>61</y>
+       <width>211</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="spacing">
+      <number>15</number>
+     </property>
+     <property name="currentRow">
+      <number>-1</number>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>cat</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dog</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="searchBar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>32</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchButton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>32</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>搜索</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="contactPage">
+    <widget class="QListWidget" name="contactList">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>211</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="resizeMode">
+      <enum>QListView::Fixed</enum>
+     </property>
+     <property name="spacing">
+      <number>15</number>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>cat</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dog</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>monkey</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="searchBar_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>32</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchButton_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>32</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>搜索</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>chatWidget</zorder>
+  <zorder>settingWidget</zorder>
+  <zorder>stackedWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
